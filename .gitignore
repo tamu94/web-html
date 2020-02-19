@@ -1,0 +1,5 @@
+Resources/
+*.ini
+
+*.ipynb_checkpoints
+*.vs/
