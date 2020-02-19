@@ -1,9 +1,19 @@
 <html>
     <head>
+          <!-- Bring in our bootstrap stylesheet -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+          <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- Bring in our plotly stylesheet -->
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     </head>
     <body>
-        <div id="scatter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    Eyeballs integrate visualize proactive e-tailers syndicate platforms ecologies B2B innovative reinvent design leading-edge, solutions. Dot-com holistic 24/7 open-source users visualize platforms communities back-end integrate open-source integrated embedded reinvent back-end; e-tailers B2C viral?
+                </div>
+            <div class = "chart" id="scatter">
             <script>
                 Plotly.plot("scatter", {{ plot_data | safe }}, {})
             </script>
