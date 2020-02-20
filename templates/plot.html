@@ -6,14 +6,23 @@
         <link rel="stylesheet" href="style.css">
         <!-- Bring in our plotly stylesheet -->
         <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <title>Latitude vs x</title>
     </head>
     <body>
+        <div style="text-align:center; class=container"> 
+            <h1>Summary:</h1>
+            <h2>Latitude vs X</h2>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-6">
-                    Eyeballs integrate visualize proactive e-tailers syndicate platforms ecologies B2B innovative reinvent design leading-edge, solutions. Dot-com holistic 24/7 open-source users visualize platforms communities back-end integrate open-source integrated embedded reinvent back-end; e-tailers B2C viral?
+                    The purpose of this project was to analyze how weather changes as you gary latitude.  To accomplish the analysis, the OpenWeatherMAP API was used to 
+                    assemble a dataset of 500 cities.
+
+                    Matplotlib was then utilized to demonstrate the various relationships of weather verus latitude.  Factors examined included temperature, wind speed, 
+                    cloudiness and humidity.  This site provides the source data and visualizations created for the analysis.  Trends and observations found are also discussed.
                 </div>
-            <div class = "chart" id="scatter">
+        <div class = "chart" id="scatter">
             <script>
                 Plotly.plot("scatter", {{ plot_data | safe }}, {})
             </script>
